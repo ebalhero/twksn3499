@@ -1,0 +1,71 @@
+/* RESET & BASE */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  background: #0000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* FULLSCREEN BEHAVIOUR (MOBILE) */
+.builder-layout,
+#body_0,
+#row_1,
+#row_3,
+.container,
+.s-row,
+[id^="col_"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  max-width: 100% !important;
+}
+
+a {
+  display: block;
+}
+
+[id^="content_image_"],
+[id^="content_timer_"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+#body_0 {
+  min-height: 100vh !important;
+}
+
+/* MOBILE SCREEN SIMULATION (DESKTOP) */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f0f0f0;
+  }
+  .mobile-wrapper {
+    width: 430px; /* lebar 'telefon' */
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: #fff;
+  }
+}
